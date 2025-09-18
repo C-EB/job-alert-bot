@@ -30,12 +30,6 @@ async def main():
     # Start the scheduler
     setup_scheduler(bot)
 
-        # --- TEMPORARY CODE FOR TESTING ---
-    logger.info("MANUALLY TRIGGERING JOB PROCESSOR FOR TESTING...")
-    await job_processor(bot) # <--- ADD THIS LINE TO TEST
-    logger.info("MANUAL JOB PROCESSOR RUN COMPLETE.")
-    # ------------------------------------
-
     logger.info("Bot is starting...")
     # Start polling for updates from Telegram
     await dp.start_polling(bot)

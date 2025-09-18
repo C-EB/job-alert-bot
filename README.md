@@ -1,6 +1,6 @@
 # 🤖 Telegram Job Alert Scraper Bot
 
-![Python Version](https://img.shields.io/badge/python-3.11+-blue.svg)![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)![Status](https://img.shields.io/badge/status-production_ready-brightgreen)
+![Python Version](https://img.shields.io/badge/python-3.11+-blue.svg)![Status](https://img.shields.io/badge/status-production_ready-brightgreen)
 
 A highly modular and scalable Telegram bot designed to automate the job search process. The bot scrapes job boards for new listings, filters them based on user-defined keywords, and delivers real-time alerts directly to subscribed users.
 
@@ -10,10 +10,26 @@ This project was built not just to be functional, but to serve as a showcase of 
 
 ### 📸 Bot in Action
 
+<<<<<<< HEAD
 | Welcome & Help | Managing Subscriptions | Job Notifications |
 | :---: | :---: | :---: |
 | _The `/start` and `/help` commands provide a clear and welcoming user experience._ | _Users can easily add, remove, and list their keyword subscriptions._ | _Receive instant, well-formatted job alerts that match your criteria._ |
 | ![Welcome Screen](https://github.com/C-EB/job-alert-bot/assets/bot_welcome.png?raw=true) | ![Managing Subscriptions](https://github.com/C-EB/job-alert-bot/assets/bot_subscriptions.png?raw=true) | ![Job Notifications](https://github.com/C-EB/job-alert-bot/assets/bot_notification.png?raw=true) |
+=======
+Here is a glimpse of the bot's user interface and core functionality.
+
+**1. Welcome & Onboarding**  
+*A clean, welcoming message guides the user on how to use the bot from the very beginning.*
+![Welcome Screen](https://github.com/C-EB/job-alert-bot/assets/bot_welcome.png)
+
+**2. Easy Subscription Management**  
+*Users can effortlessly subscribe, unsubscribe, and list their job keywords with simple commands.*
+![Managing Subscriptions](https://github.com/C-Eb/job-alert-bot/assets/bot_subscriptions.png)
+
+**3. Instant Job Notifications**  
+*Matching jobs are delivered instantly in a well-formatted message, complete with a direct link to the job posting.*
+![Job Notifications](https://github.com/C-Eb/job-alert-bot/assets/bot_notification.png)
+>>>>>>> ec9f7b8 (fix some issues)
 
 ***
 
@@ -116,7 +132,7 @@ Follow these steps to get the bot running on your local machine.
 #### 3. Clone & Install
 ```bash
 # Clone the repository
-git clone https://github.com/C-EB/job-alert-bot.git
+git clone https://github.com/your-username/job_alert_bot.git
 cd job_alert_bot
 
 # Create and activate a virtual environment
