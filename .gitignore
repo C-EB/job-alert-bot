@@ -1,0 +1,58 @@
+# --- Python compiled files ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- Virtual environments ---
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# --- Environment & secrets ---
+.env
+.env.*
+*.env
+
+# --- OS files ---
+.DS_Store
+Thumbs.db
+
+# --- IDE/editor files ---
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --- Logs & databases ---
+*.log
+*.sqlite3
+*.db
+
+# --- Testing ---
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# --- Packaging ---
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# --- Jupyter Notebooks ---
+.ipynb_checkpoints
+
+# --- Cache ---
+.cache/
+.mypy_cache/
+__pypackages__/
+
+
+# Databases
+*.db
+*.sqlite3
