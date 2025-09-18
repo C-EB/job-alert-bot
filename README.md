@@ -90,16 +90,16 @@ graph TD
     C -- Handles Commands --> D[Command Handlers]
     D -- add/remove/list --> E[Database (SQLite)]
 
-    subgraph Scheduled_Daily_Job
+    subgraph ScheduledDailyJob
         F[Scheduler (APScheduler)] -- Triggers --> G[Scraper Orchestrator]
         G -- Gets Keywords --> E
         G -- Runs Scrapers --> H[Scraper Modules]
-        H -- Fetches Data --> I[Job Boards (Web/API)]
+        H -- Fetches Data --> I[Job Boards Web API]
         I -- Returns Data --> H
         H -- Returns Parsed Jobs --> G
     end
 
-    G -- Matches Jobs & Users --> J[Job Processor]
+    G -- Matches Jobs and Users --> J[Job Processor]
     J -- Checks History --> E
     J -- Sends Alerts --> C
     J -- Saves Sent Jobs --> E
