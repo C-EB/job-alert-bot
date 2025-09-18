@@ -10,12 +10,6 @@ This project was built not just to be functional, but to serve as a showcase of 
 
 ### 📸 Bot in Action
 
-<<<<<<< HEAD
-| Welcome & Help | Managing Subscriptions | Job Notifications |
-| :---: | :---: | :---: |
-| _The `/start` and `/help` commands provide a clear and welcoming user experience._ | _Users can easily add, remove, and list their keyword subscriptions._ | _Receive instant, well-formatted job alerts that match your criteria._ |
-| ![Welcome Screen](https://github.com/C-EB/job-alert-bot/assets/bot_welcome.png?raw=true) | ![Managing Subscriptions](https://github.com/C-EB/job-alert-bot/assets/bot_subscriptions.png?raw=true) | ![Job Notifications](https://github.com/C-EB/job-alert-bot/assets/bot_notification.png?raw=true) |
-=======
 Here is a glimpse of the bot's user interface and core functionality.
 
 **1. Welcome & Onboarding**  
@@ -29,7 +23,6 @@ Here is a glimpse of the bot's user interface and core functionality.
 **3. Instant Job Notifications**  
 *Matching jobs are delivered instantly in a well-formatted message, complete with a direct link to the job posting.*
 ![Job Notifications](https://github.com/C-Eb/job-alert-bot/assets/bot_notification.png)
->>>>>>> ec9f7b8 (fix some issues)
 
 ***
 
