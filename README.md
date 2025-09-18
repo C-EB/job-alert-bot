@@ -14,15 +14,15 @@ Here is a glimpse of the bot's user interface and core functionality.
 
 **1. Welcome & Onboarding**  
 *A clean, welcoming message guides the user on how to use the bot from the very beginning.*
-![Welcome Screen](https://github.com/C-EB/job-alert-bot/assets/bot_welcome.png)
+![Welcome Screen](/assets/bot_welcome.png)
 
 **2. Easy Subscription Management**  
 *Users can effortlessly subscribe, unsubscribe, and list their job keywords with simple commands.*
-![Managing Subscriptions](https://github.com/C-Eb/job-alert-bot/assets/bot_subscriptions.png)
+![Managing Subscriptions](assets/bot_subscriptions.png)
 
 **3. Instant Job Notifications**  
 *Matching jobs are delivered instantly in a well-formatted message, complete with a direct link to the job posting.*
-![Job Notifications](https://github.com/C-Eb/job-alert-bot/assets/bot_notification.png)
+![Job Notifications](/assets/bot_notification.png)
 
 ***
 
