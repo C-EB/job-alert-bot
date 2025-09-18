@@ -85,26 +85,26 @@ The system is composed of several decoupled services that communicate with each 
 
 ```mermaid
 graph TD
-    A[User] -- Telegram Commands --> B{Telegram API};
-    B -- Updates --> C[🤖 Aiogram Bot];
-    C -- Handles Commands --> D[Command Handlers];
-    D -- add/remove/list --> E[Database (SQLite)];
+    A[User] -- Telegram Commands --> B{Telegram API}
+    B -- Updates --> C[Aiogram Bot]
+    C -- Handles Commands --> D[Command Handlers]
+    D -- add/remove/list --> E[Database (SQLite)]
 
-    subgraph "Scheduled Daily Job"
-        F[Scheduler (APScheduler)] -- Triggers --> G[Scraper Orchestrator];
-        G -- Gets Keywords --> E;
-        G -- Runs Scrapers --> H[Scraper Modules];
-        H -- Fetches Data --> I[Job Boards (Web/API)];
-        I -- Returns Data --> H;
-        H -- Returns Parsed Jobs --> G;
+    subgraph Scheduled_Daily_Job
+        F[Scheduler (APScheduler)] -- Triggers --> G[Scraper Orchestrator]
+        G -- Gets Keywords --> E
+        G -- Runs Scrapers --> H[Scraper Modules]
+        H -- Fetches Data --> I[Job Boards (Web/API)]
+        I -- Returns Data --> H
+        H -- Returns Parsed Jobs --> G
     end
 
-    G -- Matches Jobs & Users --> J[Job Processor];
-    J -- Checks History --> E;
-    J -- Sends Alerts --> C;
-    J -- Saves Sent Jobs --> E;
-    C -- Delivers Message --> B;
-    B -- Sends Notification --> A;
+    G -- Matches Jobs & Users --> J[Job Processor]
+    J -- Checks History --> E
+    J -- Sends Alerts --> C
+    J -- Saves Sent Jobs --> E
+    C -- Delivers Message --> B
+    B -- Sends Notification --> A
 ```
 
 ***
@@ -125,8 +125,8 @@ Follow these steps to get the bot running on your local machine.
 #### 3. Clone & Install
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/job_alert_bot.git
-cd job_alert_bot
+git clone https://github.com/C-EB/job-alert-bot.git
+cd job-alert-bot
 
 # Create and activate a virtual environment
 python -m venv venv
