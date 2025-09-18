@@ -1,5 +1,3 @@
-# job_alert_bot/scraper.py (MODIFIED)
-
 import httpx
 import asyncio
 import logging
@@ -9,7 +7,7 @@ import urllib.parse
 from config import HTTP_HEADERS
 from cssselectors import SELECTORS
 import scrapers
-import database as db # Import the database
+import database as db
 from config import LOGGING_LEVEL
 
 # Convert string to logging level constant
@@ -22,7 +20,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 async def fetch_html(url: str) -> str | None:
-    # ... (this function remains the same) ...
+   
     async with httpx.AsyncClient(headers=HTTP_HEADERS, follow_redirects=True) as client:
         try:
             response = await client.get(url, timeout=15.0)
@@ -94,13 +92,13 @@ async def run_scraper(site_name: str, module, selectors: dict, url: str):
         scraper_type = selectors.get("type", "html") # Default to 'html' if not specified
 
         if scraper_type == "api":
-            # For APIs, we pass the raw JSON text directly
+            
             jobs = await module.scrape(response_text, selectors)
         else:
-            # For HTML, we need to import BeautifulSoup here
+            
             from bs4 import BeautifulSoup
             
-            # This is the old logic, now inside a condition
+    
             soup = BeautifulSoup(response_text, 'html.parser')
             jobs = []
             
@@ -109,9 +107,6 @@ async def run_scraper(site_name: str, module, selectors: dict, url: str):
                  logger.warning(f"No job cards found for {site_name}. Check HTML structure or selectors.")
                  return []
             
-            # We need to re-implement the parsing logic here or, even better,
-            # refactor the HTML scrapers to accept the BeautifulSoup object.
-            # For simplicity, let's just pass the raw HTML and let the scraper parse it.
             jobs = await module.scrape(response_text, selectors)
 
         return jobs

@@ -1,4 +1,3 @@
-# job_alert_bot/scrapers/remoteok.py (REPLACE the entire file)
 
 import logging
 import json

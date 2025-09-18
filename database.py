@@ -1,5 +1,3 @@
-# job_alert_bot/database.py
-
 import aiosqlite
 import logging
 from config import DATABASE_PATH

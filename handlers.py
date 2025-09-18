@@ -1,5 +1,3 @@
-# job_alert_bot/handlers.py
-
 from aiogram import Router, F
 from aiogram.types import Message
 from aiogram.filters import CommandStart, Command
