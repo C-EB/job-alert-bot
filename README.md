@@ -88,17 +88,17 @@ graph TD
     A[User] -- Telegram Commands --> B{Telegram API}
     B -- Updates --> C[Aiogram Bot]
     C -- Handles Commands --> D[Command Handlers]
-    D -- add/remove/list --> E[Database (SQLite)]
-    
+    D -- add/remove/list --> E[Database SQLite]
+
     subgraph ScheduledDailyJob
-        F[Scheduler (APScheduler)] -- Triggers --> G[Scraper Orchestrator]
+        F[Scheduler APScheduler] -- Triggers --> G[Scraper Orchestrator]
         G -- Gets Keywords --> E
         G -- Runs Scrapers --> H[Scraper Modules]
         H -- Fetches Data --> I[Job Boards Web API]
         I -- Returns Data --> H
         H -- Returns Parsed Jobs --> G
     end
-    
+
     G -- Matches Jobs and Users --> J[Job Processor]
     J -- Checks History --> E
     J -- Sends Alerts --> C
