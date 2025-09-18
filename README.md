@@ -13,7 +13,7 @@ This project was built not just to be functional, but to serve as a showcase of 
 | Welcome & Help | Managing Subscriptions | Job Notifications |
 | :---: | :---: | :---: |
 | _The `/start` and `/help` commands provide a clear and welcoming user experience._ | _Users can easily add, remove, and list their keyword subscriptions._ | _Receive instant, well-formatted job alerts that match your criteria._ |
-| ![Welcome Screen](https://github.com/C-EB/job-alert-bot/blob/main/.github/assets/bot_welcome.png?raw=true) | ![Managing Subscriptions](https://github.com/C-EB/job-alert-bot/blob/main/.github/assets/bot_subscriptions.png?raw=true) | ![Job Notifications](https://github.com/C-EB/job-alert-bot/blob/main/.github/assets/bot_notification.png?raw=true) |
+| ![Welcome Screen](https://github.com/C-EB/job-alert-bot/assets/bot_welcome.png?raw=true) | ![Managing Subscriptions](https://github.com/C-EB/job-alert-bot/assets/bot_subscriptions.png?raw=true) | ![Job Notifications](https://github.com/C-EB/job-alert-bot/assets/bot_notification.png?raw=true) |
 
 ***
 
